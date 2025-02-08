@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mon Jeu Forest Mine Danguerous</title>
+  <style>
+    /* Styles de base */
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: 'Orbitron', sans-serif;
+      background-color: #1a1a1a;
+      color: #e0e0e0;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+    header {
+      background-color: #0d0d0d;
+      color: #ff6600;
+      text-align: center;
+      padding: 20px;
+      border-bottom: 2px solid #ff6600;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+      width: 100%;
+    }
+    header h1 {
+      font-size: 2.5em;
+      margin: 0;
+    }
+    main {
+      max-width: 1200px;
+      margin: 20px auto;
+      padding: 20px;
+      background-color: #262626;
+      box-shadow: 0 0 20px rgba(0,0,0,0.5);
+      border-radius: 10px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+    .game-info {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      justify-content: center;
+      margin-bottom: 40px;
+    }
+    .game-info img {
+      max-width: 500px;
+      width: 100%;
+      border: 2px solid #ff6600;
+      margin: 20px;
+      border-radius: 10px;
+      transition: transform 0.3s ease;
+    }
+    .game-info img:hover {
+      transform: scale(1.05);
+    }
+    .game-description {
+      max-width: 600px;
+      margin: 20px;
+      text-align: center;
+    }
+    .game-description h2 {
+      color: #ff6600;
+      font-size: 2em;
+      margin-bottom: 10px;
+    }
+    .game-description p {
+      font-size: 1.2em;
+      line-height: 1.5;
+    }
+    .game-description ul {
+      list-style-type: none;
+      padding: 0;
+    }
+    .game-description ul li {
+      background: #333;
+      margin: 5px 0;
+      padding: 10px;
+      border-radius: 5px;
+      font-size: 1.1em;
+    }
+    .purchase-section {
+      text-align: center;
+      margin-top: 40px;
+    }
+    .purchase-section h2 {
+      margin-bottom: 10px;
+      color: #ff6600;
+      font-size: 2em;
+    }
+    .purchase-section p {
+      font-size: 1.2em;
+      margin-bottom: 20px;
+    }
+    .purchase-section #paypal-container-YZCME27TECFBY {
+      display: flex;
+      justify-content: center;
+    }
+    .contact-section {
+      text-align: center;
+      margin-top: 40px;
+      width: 100%;
+    }
+    .contact-section h2 {
+      margin-bottom: 10px;
+      color: #ff6600;
+      font-size: 2em;
+    }
+    .contact-section p {
+      font-size: 1.2em;
+      color: #e0e0e0;
+    }
+    footer {
+      background-color: #0d0d0d;
+      color: #ff6600;
+      text-align: center;
+      padding: 10px;
+      margin-top: 20px;
+      border-top: 2px solid #ff6600;
+      box-shadow: 0 -4px 8px rgba(0, 0, 0, 0.5);
+      width: 100%;
+    }
+    footer p {
+      margin: 0;
+    }
+  </style>
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+  <header>
+    <h1>Forest Mine Danguerous</h1>
+  </header>
+
+  <main>
+    <!-- Section de présentation du jeu -->
+    <section class="game-info">
+      <!-- Remplace "game-screenshot.jpg" par le chemin vers une image de ton jeu -->
+      <img src="capture jeux 1.png" alt="Capture d'écran du jeu">
+      <div class="game-description">
+        <h2>À propos du jeu</h2>
+        <p>
+          Découvrez mon jeu développé avec Unreal Engine. Profitez d'une expérience immersive grâce à des graphismes époustouflants, un gameplay captivant et une histoire riche en émotions.
+        </p>
+        <ul>
+          <li>Graphismes haute définition</li>
+          <li>Gameplay immersif</li>
+          <li>Univers riche et dynamique</li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- Section des fonctionnalités du jeu -->
+    <section class="game-features">
+      <h2>Fonctionnalités du jeu</h2>
+      <ul>
+        <li>Survie : Gérez votre faim, votre soif et votre santé tout en explorant un monde dangereux.</li>
+        <li>Exploration : Découvrez des environnements variés et mystérieux, remplis de secrets à dévoiler.</li>
+        <li>Minage : Extrayez des ressources précieuses pour fabriquer des outils et des structures.</li>
+        <li>Construction : Construisez des abris, des bases et des structures pour vous protéger et stocker vos ressources.</li>
+        <li>Conduite de véhicules : Pilotez divers véhicules pour vous déplacer rapidement et explorer de nouvelles zones.</li>
+      </ul>
+    </section>
+
+    <!-- Section d'achat -->
+    <section class="purchase-section">
+      <h2>Acheter le jeu</h2>
+      <p>Procurez-vous le jeu dès maintenant en cliquant sur le bouton ci-dessous :</p>
+      <div id="paypal-container-YZCME27TECFBY"></div>
+    </section>
+
+    <!-- Section de contact -->
+    <section class="contact-section">
+      <h2>Contactez-nous</h2>
+      <p>Pour toute question, veuillez nous contacter à : <a href="mailto:susu27052005@gmail.com">susu27052005@gmail.com</a></p>
+    </section>
+  </main>
+
+  <footer>
+    <p>© 2025 Forest Mine Danguerous. Tous droits réservés.</p>
+  </footer>
+  <!-- Lien de téléchargement caché -->
+  <a id="download-link" href="WindowsNoEditor.zip" download="Forest_Mine_Danguerous.zip" style="display: none;"></a>
+
+  <script src="https://www.paypal.com/sdk/js?client-id=BAAdx6CRsqCeU1h-njCDeWFnsWo2ksIKqThYxEOvGJARge3jMBG5z7FKpTPkeVg_EbIbPBshD_6e_6yU10&components=hosted-buttons&disable-funding=venmo&currency=EUR"></script>
+  <script>
+    paypal.HostedButtons({
+      hostedButtonId: "YZCME27TECFBY",
+      createOrder: function(data, actions) {
+        return actions.order.create({
+          purchase_units: [{
+            amount: {
+              value: '5.00' // Le prix du jeu
+            }
+          }]
+        });
+      },
+      onApprove: function(data, actions) {
+        return actions.order.capture().then(function(details) {
+          alert('Transaction completed by ' + details.payer.name.given_name);
+          // Déclencher le téléchargement du fichier
+          document.getElementById('download-link').click();
+        });
+      }
+    }).render("#paypal-container-YZCME27TECFBY");
+  </script>
+  
+</body>
+</html>
+
+  
+</body>
+</html>
